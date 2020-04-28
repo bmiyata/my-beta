@@ -8,7 +8,8 @@
     "server": "nodemon server.js",
     "client": "yarn start --prefix client",
     "dev": "concurrently \"yarn run server\" \"cd client && yarn start\"",
-    "start:prod": "cross-env NODE_ENV=production nodemon server.js"
+    "start:prod": "cross-env NODE_ENV=production nodemon server.js",
+    "heroku-postbuild": "cd client && yarn install && yarn build"
   },
   "author": "Billy Miyata",
   "license": "ISC",

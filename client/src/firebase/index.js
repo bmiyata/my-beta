@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/storage";
 
 var firebaseConfig = {
-  apiKey: "AIzaSyDfclT9dnMppfhoplJSXHJigc_2JDQ72Mo",
+  apiKey: process.env.FIREBASE,
   authDomain: "mybeta-c2482.firebaseapp.com",
   databaseURL: "https://mybeta-c2482.firebaseio.com",
   projectId: "mybeta-c2482",
